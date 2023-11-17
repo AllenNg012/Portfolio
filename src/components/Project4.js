@@ -98,7 +98,7 @@ const Project = () => {
   <tr><td> </td>
       <td><Slide direction="right">
         <Profile>
-        <img src={P2}  style={{ width: '400px', height: 'auto' }} />
+        <img src={P2}  style={{ width: '400px', height: 'auto' }} alt=""/>
         </Profile>
       </Slide> </td></tr>
 
@@ -124,7 +124,7 @@ const Project = () => {
       </Slide></td></tr>
   <tr><td><Slide direction="left">
         <Profile>
-        <img src={P3}  style={{ width: '400px', height: 'auto' }} />
+        <img src={P3}  style={{ width: '400px', height: 'auto' }} alt=""/>
         </Profile>
       </Slide> </td>
       <td> </td></tr>
@@ -153,7 +153,7 @@ const Project = () => {
   <tr><td> </td>
       <td><Slide direction="right">
         <Profile>
-        <img src={P4}  style={{ width: '500px', height: 'auto' }} />
+        <img src={P4}  style={{ width: '500px', height: 'auto' }} alt=""/>
         </Profile>
       </Slide> </td></tr>
 
@@ -204,7 +204,7 @@ const Project = () => {
 
   <br></br>
   <Zoom><StyledImage >
-      <img src={logo2} ></img>
+      <img src={logo2} alt=""></img>
       </StyledImage></Zoom>
       <Fade>
           <ArrowUp onClick={scrollUp}>

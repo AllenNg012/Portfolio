@@ -8,10 +8,6 @@ import { Fade } from "react-awesome-reveal";
 import { Zoom } from 'react-awesome-reveal';
 import { Slide } from "react-awesome-reveal";
 import  P1a from "./pic/P1a.png";
-import  P1b from "./pic/P1b.png";
-import  P1c from "./pic/P1c.png";
-import  P1d from "./pic/P1d.png";
-import  P1e from "./pic/P1e.png";
 import anime from "./pic/Animation.json"
 import Lottie from "lottie-react";
 import Typewriter from './function/Typewriter'; 
@@ -210,7 +206,7 @@ const Project = () => {
 
   <br></br>
   <Zoom><StyledImage >
-      <img src={logo2} ></img>
+      <img src={logo2} alt=""></img>
       </StyledImage></Zoom>
       <Fade>
           <ArrowUp onClick={scrollUp}>
