@@ -5,6 +5,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
 import  P1 from "../pic/p1/4.gif";
 import  P2 from "../pic/p2/1.gif";
+import  P3 from "../pic/p3/tbc.png";
 import  P4 from "../pic/p4/1.gif";
 import  P5 from "../pic/p5/7.gif";
 
@@ -21,7 +22,7 @@ let data = [
         link : "/Project2"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
+        img : P3,
         disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
         link : "/Project3"
     },

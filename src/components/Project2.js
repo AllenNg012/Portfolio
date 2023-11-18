@@ -50,7 +50,7 @@ const Project = () => {
                 <p><Zoom>Click here to view the work</Zoom>
                   <br />
                   <Zoom><Button>
-        <StyledLink href='https://google.com' target='_blank' rel='noopener noreferrer'>
+        <StyledLink href='https://fancy-twilight-2edfc2.netlify.app' target='_blank' rel='noopener noreferrer'>
           View Project
         </StyledLink>
       </Button></Zoom>
@@ -181,7 +181,7 @@ const Project = () => {
        </td></tr>
        </table>
         <SS><Button>
-        <StyledLink href='https://google.com' target='_blank' rel='noopener noreferrer'>
+        <StyledLink href='https://fancy-twilight-2edfc2.netlify.app' target='_blank' rel='noopener noreferrer'>
           View Project
         </StyledLink>
       </Button></SS>
