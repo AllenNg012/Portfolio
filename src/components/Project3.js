@@ -47,11 +47,12 @@ const Project = () => {
                 <br />
                 <p><Zoom>Click here to view the work</Zoom>
                   <br />
-                  <Zoom><Button>
+                       {/* -----------------------           <Zoom><Button>
         <StyledLink href='https://kaixa94.wixsite.com/my-site-4' target='_blank' rel='noopener noreferrer'>
           View Project
         </StyledLink>
-      </Button></Zoom>
+      </Button></Zoom>  
+    </a>------------------------------------------------------------------- */}
                   <br /> <Zoom>Or scroll to see the processing flow</Zoom>
                 </p>
               </Textss>
@@ -182,11 +183,13 @@ const Project = () => {
       </Slide>
        </td></tr>
        </table>
-        <SS><Button>
+                 {/* -----------------------               <SS><Button>
         <StyledLink href='https://kaixa94.wixsite.com/my-site-4' target='_blank' rel='noopener noreferrer'>
           View Project
         </StyledLink>
       </Button></SS>
+    </a>------------------------------------------------------------------- */}
+  
     </Container4>
 
 
