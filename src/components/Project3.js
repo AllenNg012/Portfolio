@@ -7,12 +7,9 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import { Fade } from "react-awesome-reveal";
 import { Zoom } from 'react-awesome-reveal';
 import { Slide } from "react-awesome-reveal";
-import  P1a from "./pic/P1a.png";
-import anime from "./pic/Animation.json"
-import Lottie from "lottie-react";
 import Typewriter from './function/Typewriter'; 
 import  a1 from "./pic/a1.gif";
-
+import  P3 from "./pic/p3/tbc.gif";
 
 
 const Project = () => {
@@ -63,7 +60,7 @@ const Project = () => {
           <td>
             <Slide direction="right">
               <Profile>
-                <Lottie animationData={anime} />
+              <img src={P3} alt="Animated GIF" style={{ width: '500px', height: 'auto' }} />
               </Profile>
             </Slide>
           </td>
@@ -99,7 +96,7 @@ const Project = () => {
   <tr><td> </td>
       <td><Slide direction="right">
         <Profile>
-        <Lottie animationData={anime}></Lottie>
+        <img src={P3} alt="Animated GIF" style={{ width: '500px', height: 'auto' }} />
         </Profile>
       </Slide> </td></tr>
 
@@ -128,7 +125,7 @@ const Project = () => {
       </Slide></td></tr>
   <tr><td><Slide direction="left">
         <Profile>
-        <Lottie animationData={anime}></Lottie>
+        <img src={P3} alt="Animated GIF" style={{ width: '500px', height: 'auto' }} />
         </Profile>
       </Slide> </td>
       <td> </td></tr>
@@ -160,7 +157,7 @@ const Project = () => {
   <tr><td> </td>
       <td><Slide direction="right">
         <Profile>
-        <Lottie animationData={anime}></Lottie>
+        <img src={P3} alt="Animated GIF" style={{ width: '500px', height: 'auto' }} />
         </Profile>
       </Slide> </td></tr>
 
@@ -170,16 +167,23 @@ const Project = () => {
 {/* ------------------------------------------------------------------------------------------ */}
 
 <Container4 >
-        <Zoom>
-        <h1>Result</h1>
+<Zoom>
+            <h1>Result</h1>
+            <p>
+            Let's see the final view </p>   
+              <br></br><br></br>
         </Zoom>
         <table>
 
         <tr><td><Slide direction="left">
-        <Zoom><img src={P1a} alt="axs"></img></Zoom>
+        <Zoom>              <img src={P3} alt="Animated GIF" style={{ width: '500px', height: 'auto' }} />
+</Zoom>
          </Slide></td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
       <td>
-      <Slide direction="right"><Zoom><img src={P1a} alt="axs"></img></Zoom>
+      <Slide direction="right"><Zoom>              <img src={P3} alt="Animated GIF" style={{ width: '500px', height: 'auto' }} />
+</Zoom>
       </Slide>
        </td></tr>
        </table>

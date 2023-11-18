@@ -5,7 +5,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
 import  P1 from "../pic/p1/4.gif";
 import  P2 from "../pic/p2/1.gif";
-import  P3 from "../pic/p3/tbc.png";
+import  P3 from "../pic/p3/tbc.gif";
 import  P4 from "../pic/p4/1.gif";
 import  P5 from "../pic/p5/7.gif";
 
