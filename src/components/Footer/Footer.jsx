@@ -95,7 +95,7 @@ const Footer = () => {
             <AiOutlineArrowUp />
           </ArrowUp>
         </Fade><br></br>
-        <div style={{ fontSize: '8px' }}>Please hire me, I am washing toilet at Mcdonald =&#40;
+        <div style={{ fontSize: '8px' }}>Hire me Please. 
                 <img src={cat} style={{ width: '60px', height: 'auto' }} alt="Cat" />
 </div>
         
