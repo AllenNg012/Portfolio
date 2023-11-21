@@ -93,10 +93,10 @@ const Footer = () => {
         <Fade>
           <ArrowUp onClick={scrollUp}>
             <AiOutlineArrowUp />
-          </ArrowUp>
+          </ArrowUp>                <img src={cat} style={{ width: '60px', height: 'auto' }} alt="Cat" />
+
         </Fade><br></br>
         <div style={{ fontSize: '8px' }}>
-                <img src={cat} style={{ width: '60px', height: 'auto' }} alt="Cat" />
 </div>
         
 
