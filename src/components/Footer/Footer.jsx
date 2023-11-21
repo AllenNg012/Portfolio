@@ -88,6 +88,9 @@ const Footer = () => {
                 </a>
               </span>
             </Zoom>
+            <Zoom>
+              <img src={cat} style={{ width: '60px', height: 'auto' }} alt="Cat" />
+            </Zoom>
           </div>
         </div>
         <Fade>
@@ -96,7 +99,6 @@ const Footer = () => {
           </ArrowUp>
         </Fade><br></br>
         <div style={{ fontSize: '8px' }}>
-                <img src={cat} style={{ width: '60px', height: 'auto' }} alt="Cat" />
 </div>
         
 
