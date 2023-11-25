@@ -88,9 +88,10 @@ const Footer = () => {
                 </a>
               </span>
             </Zoom>
-            <Zoom>
+
+                      {/* -----------------------                     <Zoom>
               <img src={cat} style={{ width: '60px', height: 'auto' }} alt="Cat" />
-            </Zoom>
+            </Zoom>------------------------------------------------------------------- */}
           </div>
         </div>
         <Fade>
