@@ -6,14 +6,17 @@ import  logo2 from "../pic/chnlogo.png";
 
 const Header = () => {
     const [bar, setBar] = useState(false);
+
+    const handleBackgroundClick = () => {
+        setBar(false); // Close the menu when background is clicked
+    };
   return (
     <Container bar={bar}>
         <Logo>
             <img src={logo2} alt="axs"></img>
             <h1>Portfolio</h1>
         </Logo>
-        <Nav bar={bar}>
-            <span><a href="#home">Home</a></span>
+        <Nav bar={bar} onClick={handleBackgroundClick}>            <span><a href="#home">Home</a></span>
             <span><a href="#service">Services</a></span>
             <span><a href="#project">Projects</a></span>
             <span><a href="#footer">Contact Me</a></span>
@@ -101,13 +104,22 @@ const Logo = styled.div`
         font-weight: 600;
         font-size: 1.2rem;
     }
+    @media (max-width: 650px) {
+        width: 10rem;
+      }
+
+  h1{
+      font-weight: 300;
+      font-size: 0.6rem;
+  }
+
 `
 const Nav = styled.div`
     @media(max-width:640px){
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color: #01be96;
+        background-color: #a3782a;
         inset: 0;
         justify-content: center;
         align-items: center;
