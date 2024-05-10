@@ -102,7 +102,7 @@ const Logo = styled.div`
         width: 7rem;
       }
 
-      h1{
+      .h1{
         font-weight: 200;
         font-size: 0.6rem;
     }
