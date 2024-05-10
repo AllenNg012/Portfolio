@@ -93,25 +93,19 @@ const Logo = styled.div`
     span{
         font-size: 1.8rem;
     }
+    
     img {
         width: 10rem;
         filter: drop-shadow(0px 10px 10px #01be9570);
-        @media (max-width: 790px) {
-          width: 20rem;
-        }
 
-    h1{
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
     @media (max-width: 650px) {
-        width: 10rem;
+        width: 7rem;
       }
 
-  h1{
-      font-weight: 300;
-      font-size: 0.6rem;
-  }
+      h1{
+        font-weight: 200;
+        font-size: 0.6rem;
+    }
 
 `
 const Nav = styled.div`
