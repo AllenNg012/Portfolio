@@ -336,7 +336,7 @@ const Logo = styled.div`
       @media (max-width: 790px) {
         width: 20rem;
       }
-  
+  }
 
     h3{
         font-weight: 600;

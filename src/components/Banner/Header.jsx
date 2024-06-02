@@ -106,7 +106,7 @@ const Logo = styled.div`
         font-weight: 200;
         font-size: 0.6rem;
     }
-
+    }
 `
 const Nav = styled.div`
     @media(max-width:640px){
