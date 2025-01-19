@@ -17,13 +17,13 @@
 body{
   width: 100%;
   background-color: var(---background);
-  color: #fff;
+  color: #e8e0d3;
   overflow-x: hidden;
   position: relative;
 }
 
 .ProjectColour {
-  color: #a3782a;
+  color: #12e0b3c7;
 }
 
 .slick-list, .slick-slider, .slick-track{

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import Project from './Project';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -9,8 +9,8 @@ import  P3 from "../pic/p3/tbc.gif";
 import  P4 from "../pic/p4/1.gif";
 import  P5 from "../pic/p5/7.gif";
 
-
-let data = [
+// Data array to export
+export const data = [
     {
         img : P1,
         disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
@@ -35,77 +35,110 @@ let data = [
         img : P5,
         disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
         link : "/Project5"
+    },
+    {
+        img : P3,
+        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        link : "/Project3"
+    },
+    {
+        img : P3,
+        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        link : "/Project3"
+    },
+    {
+        img : P3,
+        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        link : "/Project3"
+    },
+    {
+        img : P3,
+        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        link : "/Project3"
+    },
+    {
+        img : P3,
+        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        link : "/Project3"
+    },
+    {
+        img : P3,
+        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        link : "/Project3"
     }
 ];
 
+// Slider settings...
+// (No changes needed in the slider component)
 var settings = {
-    className: "center",
-    centerMode: true,
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    arrows : false,
-    responsive: [
-      {
-        breakpoint: 990,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-          centerMode : false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          centerMode : false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode : false
-        }
+  className: "center",
+  centerMode: true,
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  arrows : false,
+  responsive: [
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        centerMode : false
       }
-    ]
-  };
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+        centerMode : false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode : false
+      }
+    }
+  ]
+};
+
 const SliderComp = () => {
   const arrowRef = useRef(null);
-    let sliderProject = "";
-    sliderProject = data.map((item, i) => (
-        <Project item = {item} key={i}/>
-    ))
+  let sliderProject = "";
+  sliderProject = data.map((item, i) => (
+      <Project item={item} key={i} />
+  ));
   return (
     <Container>
       <Slider ref={arrowRef} {...settings}>
-      {sliderProject}
+        {sliderProject}
       </Slider>
       <Buttons>
         <button 
-        onClick={() => arrowRef.current.slickPrev()}
-        className='back'><IoIosArrowBack/></button>
+          onClick={() => arrowRef.current.slickPrev()}
+          className='back'><IoIosArrowBack/></button>
         <button 
-        onClick={() => arrowRef.current.slickNext()}
-        className='next'><IoIosArrowForward/></button>
+          onClick={() => arrowRef.current.slickNext()}
+          className='next'><IoIosArrowForward/></button>
       </Buttons>
     </Container>
-  )
-}
+  );
+};
 
 export default SliderComp;
 
 const Container = styled.div`
   position: relative;
-`
+;`
 
 const Buttons = styled.div`
   button{
@@ -119,6 +152,7 @@ const Buttons = styled.div`
     top: 45%;
     right: -1rem;
   }
+ 
 
   .back{
     left: -1rem;

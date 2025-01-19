@@ -3,20 +3,21 @@ import styled from "styled-components";
 import {AiFillGithub } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
-import { Slide } from "react-awesome-reveal";
+import { Slide,Fade } from "react-awesome-reveal";
 import anime from "../pic/Animation.json"
 import Lottie from "lottie-react";
-
+import pic1 from "../pic/Snapinst.app_469277761_8994742370582567_318393743827386623_n_108023.jpg"
+import Typewriter from '../function/Typewriter'; 
 
 const ProfComponent = () => {
   return (
     <Container id="home">
-      <Slide direction="left">
         <Texts>
+        <Fade   duration={4000} direction="up">
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Chung Hin Ng(Allen)</h1>
+          <h1 className="green"><Typewriter text="Chung Hin Ng(Allen)" typingSpeed={100} /></h1>
           <h3>Web developer</h3>
           <p>
           Offer professional consultation and web design services, covering everything from conceptualization to execution. My commitment is to deliver the most optimal and cost-effective creative solutions for clients, providing a one-stop service.
@@ -25,7 +26,8 @@ const ProfComponent = () => {
           <button>My Resume</button>
     </a>------------------------------------------------------------------- */}
 
-
+        </Fade> 
+        <Fade   duration={5000} >
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
@@ -46,11 +48,17 @@ const ProfComponent = () => {
               </span>
             </div>
           </Social>
+          <RecentProjects>
+          <p>Recent Projects</p>
+          <a href="https://google.com">
+          <button>View</button>
+          </a>
+          </RecentProjects>        </Fade> 
+
         </Texts>
-      </Slide>
       <Slide direction="right">
         <Profile>
-        <Lottie animationData={anime}></Lottie>
+        <img src={pic1} alt="axs"></img>
         </Profile>
       </Slide>
     </Container>
@@ -96,6 +104,8 @@ const Texts = styled.div`
     font-weight: 300;
   }
 
+
+    /* -----------------------         
   button {
     padding: 0.7rem 2rem;
     margin-top: 3rem;
@@ -108,8 +118,36 @@ const Texts = styled.div`
     :hover {
       filter: drop-shadow(0px 10px 10px #01be9570);
     }
-  }
+  }  
+    ------------------------------------------------------------------- */
 `;
+const RecentProjects = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  a:link { text-decoration: none; }
+
+  button {
+    
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #12e0b3c7;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    filter: drop-shadow(0px 10px 10px #01be9551);
+    :hover {
+      filter: drop-shadow(0px 10px 10px #01be9570);
+    }
+    
+  }  
+
+`
+
 const Social = styled.div`
   margin-top: 3rem;
   display: flex;
@@ -130,7 +168,7 @@ const Social = styled.div`
       width: 2.3rem;
       height: 2rem;
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #c6bba8;
+      background-color: #01be95cf;
       position: relative;
       transition: transform 400ms ease-in-out;
       :hover {
@@ -150,6 +188,8 @@ const Social = styled.div`
 const Profile = styled.div`
   
     width: 25rem;
+    img{  width: 25rem;
+    border-radius:50%}
     filter: drop-shadow(0px 5px 5px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
@@ -169,7 +209,7 @@ const Profile = styled.div`
     transform: translateY(-10px);
   }
   :hover {
-    filter: drop-shadow(0px 10px 10px #c6bba8);
+    filter: drop-shadow(0px 10px 10px #01be95cf);
   }
 `;
 

@@ -2,8 +2,15 @@ import React from 'react'
 import styled from 'styled-components';
 import SliderComp from './Slider';
 import { Zoom } from 'react-awesome-reveal';
+import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 
 const Projects = () => {
+    const scrollUp = () => {
+        window.scroll({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
   return (
     <Container id='project'>
         <Zoom>
@@ -14,6 +21,12 @@ const Projects = () => {
         <Slide>
             <SliderComp/>
         </Slide>
+        <a href="/ProjectList">Detail</a>
+        <Zoom>
+          <ArrowUp onClick={scrollUp}>
+            <AiOutlineArrowUp />
+          </ArrowUp>
+        </Zoom>
     </Container>
   )
 }
@@ -43,7 +56,31 @@ const Container = styled.div`
             width: 90%;
         }
     }
+    a{
+                margin-left: 0.4rem;
+                color: #e1d6c2;
+                :hover{
+              color: #c6bba8b2;
+            }
+            }
     
 `
-
+const ArrowUp = styled.div`
+  width: 2rem;
+  height: 2rem;
+  background-color: #01be95cf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;  
+  
+  :hover {
+    background-color: #01be9570;
+  }
+`;
 const Slide = styled.div``

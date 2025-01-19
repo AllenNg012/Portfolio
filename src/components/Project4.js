@@ -344,7 +344,7 @@ const Logo = styled.div`
     
     :hover {
       transform: rotate(360deg);
-    }
+    }}
 `;
 
 const Texts = styled.div`

@@ -18,7 +18,6 @@ const Home = () => {
       <LightColor>
         <Projects />
       </LightColor>
-      <Footer />
     </Container>
   );
 }

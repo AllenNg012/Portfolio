@@ -16,10 +16,11 @@ const Header = () => {
             <img src={logo2} alt="axs"></img>
             <h1>Portfolio</h1>
         </Logo>
-        <Nav bar={bar} onClick={handleBackgroundClick}>            <span><a href="#home">Home</a></span>
-            <span><a href="#service">Services</a></span>
-            <span><a href="#project">Projects</a></span>
-            <span><a href="#footer">Contact Me</a></span>
+        <Nav bar={bar} onClick={handleBackgroundClick}>            
+            <span><a href="/">Home</a></span>
+            <span><a href="/Workflow">Workflow</a></span>
+            <span><a href="/ProjectList">Projects</a></span>
+            <span><a href="/Contact">Contact Me</a></span>
             
         </Nav>
         <div
@@ -50,6 +51,9 @@ const Container = styled.div`
         display: none;
     }
     @media(max-width:640px){
+        h1{
+            display:none;
+        }
         .bars{
             width: 40px;
             height: 40px;
@@ -97,7 +101,11 @@ const Logo = styled.div`
     img {
         width: 10rem;
         filter: drop-shadow(0px 10px 10px #01be9570);
-
+        transition: transform 0.3s ease; /* Add this line for smooth transition */
+  
+        :hover {
+      transform: rotate(360deg);
+    }
     @media (max-width: 650px) {
         width: 7rem;
       }
@@ -113,7 +121,8 @@ const Nav = styled.div`
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color: #a3782a;
+        background-color: #222;
+        opacity: 0.9;
         inset: 0;
         justify-content: center;
         align-items: center;
@@ -128,7 +137,7 @@ const Nav = styled.div`
     span{
         margin-left: 1rem;
         a{
-            color: #fff;
+            color: #e8e0d3;
             text-decoration: none;
             font-weight: 400;
             position: relative;
@@ -139,7 +148,7 @@ const Nav = styled.div`
                 right: 0;
                 bottom: -5px;
                 height: 2px;
-                background-color: #fff;
+                background-color: #12e0b3c7;
                 transform: scale(0);
                 transform-origin: right;
                 transition: transform 400ms ease-in-out;

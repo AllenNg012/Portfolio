@@ -9,7 +9,10 @@ const Project = (props) => {
         <div className="disc">
             <h1>Description</h1>
             <p>{disc}
+
+            {/* -----------------------   
             <a href={link}>Detail</a>
+            ------------------------------------------------------------------- */}
             </p>
         </div>
     </Container>
