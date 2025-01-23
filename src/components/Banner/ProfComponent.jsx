@@ -48,7 +48,7 @@ const ProfComponent = () => {
           </Social>
           <RecentProjects>
           <p>Recent Projects</p>
-          <a href="https://google.com">
+          <a href="/ProjectList">
           <button>View</button>
           </a>
           </RecentProjects>        </Fade> 
