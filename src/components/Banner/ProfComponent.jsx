@@ -196,10 +196,13 @@ const Profile = styled.div`
 
     @media (max-width: 660px) {
       width: 18rem;
+      img{  width: 15rem;
+        border-radius:50%}
     }
 
     @media (max-width: 640px) {
       width: 100%;
+
     }
   }
 

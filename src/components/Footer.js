@@ -225,4 +225,16 @@ const Form = styled.div`
       margin-top: 5rem;
     }
   }
+
+      @media (max-width: 650px) {
+        img {
+    width: 14rem;
+    height: 12rem;
+    margin-top: 4rem;
+    &:nth-child(2) {
+      width: 16rem;
+      height: 15rem;
+      margin-top: 4rem;
+    }
+      }}
 `;
