@@ -1,12 +1,9 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import styled from "styled-components";
 import {AiFillGithub } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide,Fade } from "react-awesome-reveal";
-import anime from "../pic/Animation.json"
-import Lottie from "lottie-react";
 import pic1 from "../pic/Snapinst.app_469277761_8994742370582567_318393743827386623_n_108023.jpg"
 import Typewriter from '../function/Typewriter'; 
 

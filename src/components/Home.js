@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import styled from "styled-components";
 import Header from "./Banner/Header";
 import ProfComponent from "./Banner/ProfComponent";
