@@ -8,43 +8,71 @@ import  P2 from "../pic/p2/1.gif";
 import  P3 from "../pic/p3/tbc.gif";
 import  P4 from "../pic/p4/1.gif";
 import  P5 from "../pic/p5/7.gif";
+import  H3 from "../pic/h3.gif";
+import  Intern from "../pic/intern.gif";
+import Camponlinestore from "../pic/Camponlinestore.gif";
+import  Exchange from "../pic/exchange.gif";
+import  Cryptocurrency from "../pic/Cryptocurrency.gif";
+import  Painting from "../pic/painting.gif";
+import  Practice from "../pic/pratice.gif";
+
 
 // Data array to export
 export const data = [
     {
         img : P1,
-        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        disc : "CRM - Wordpress project",
         link : "/Project1"
     },
     {
-        img : P2,
-        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
-        link : "/Project2"
+        img : H3,
+        disc : "Official Website - Bar",
+        link : "https://new-project-h3restaurant.vercel.app/"
     },
     {
-        img : P3,
-        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
-        link : "/Project3"
+        img : Intern,
+        disc : "Website - Sports Club",
+        link : "https://athletics-coaches-page-5ufc.vercel.app/"
+    },
+    {
+        img : Camponlinestore,
+        disc : "Online store - React",
+        link : "/Project4"
     },
     {
         img : P4,
-        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
+        disc : "CRM - Wix",
         link : "/Project4"
+    },
+    {
+        img : P2,
+        disc : "Online store - Angular",
+        link : "/Project2"
+    },
+    {
+        img : Exchange,
+        disc : "Currency Converter",
+        link : "https://currency-ebon.vercel.app/"
+    },
+    {
+        img : Cryptocurrency,
+        disc : "Cryptocurrency Price Tracking",
+        link : "https://crypto-prices-one.vercel.app/"
+    },
+    {
+        img : Painting,
+        disc : "Painting Application",
+        link : "https://paint-app-d52l.vercel.app/"
+     },
+     {
+        img : Practice,
+        disc : "Self Practice",
+        link : "https://coding-practices-three.vercel.app/"
     },
     {
         img : P5,
         disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
         link : "/Project5"
-    },
-    {
-        img : P3,
-        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
-        link : "/Project3"
-    },
-    {
-        img : P3,
-        disc : "We prioritize client-centricity, crafting tailored websites for a personalized online presence.",
-        link : "/Project3"
     },
     {
         img : P3,

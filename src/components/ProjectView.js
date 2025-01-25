@@ -2,7 +2,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { Slide, Zoom, Fade,Bounce,Flip,Rotate,Roll,JackInTheBox,Hinge } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const ProjectView = () => {
   const location = useLocation(); // Access the passed project data
@@ -18,13 +18,15 @@ const ProjectView = () => {
       <HeroSection>
         <BackArrow onClick={handleBackClick}>&#8592;</BackArrow>
         <Description>
-          <Fade   duration={4000} direction="up">
-          <h1>{projectData.disc}</h1>
+          <Fade duration={4000} direction="up">
+            <h1>{projectData.disc}</h1>
           </Fade>
-          <Fade   duration={1000}>
-          <ButtonWrapper >
-            <Button href="https://google.com">View</Button>
-          </ButtonWrapper>
+          <Fade duration={1000}>
+            <ButtonWrapper>
+              <Button href={projectData.link} target="_blank" rel="noopener noreferrer">
+                View
+              </Button>
+            </ButtonWrapper>
           </Fade>
         </Description>
         <ImageWrapper>
@@ -47,7 +49,7 @@ const Container = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-;`
+`;
 
 const HeroSection = styled.div`
   display: flex;
@@ -55,7 +57,7 @@ const HeroSection = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-;`
+`;
 
 const BackArrow = styled.div`
   position: absolute;
@@ -71,7 +73,7 @@ const BackArrow = styled.div`
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }
-;`
+`;
 
 const Description = styled.div`
   position: absolute;
@@ -100,32 +102,40 @@ const Description = styled.div`
       font-size: 1rem;
     }
   }
-;`
-
-const ButtonWrapper = styled.div  `
-    padding: 3rem 0;
-  .a{text-decoration: none;  
+`;
+const ButtonWrapper = styled.div`
+  display: flex;
+  padding: 2rem 0;
+  align-items: flex-start; /* Aligns items to the top/left */
+  justify-content: flex-start; /* Aligns content to the left */
+  
+  .a {
+    text-decoration: none;
   }
+
   @media (max-width: 768px) {
     padding: 0rem 0;
-}`
+  }
+`;
 
-const Button = styled.button`
+const Button = styled.a`
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0.7rem 1.8rem;
-  border-radius: 20%;
+  border-radius: 15%;
   cursor: pointer;
   background-color: #12e0b3c7;
   border: none;
   color: #e8e0d3;
   font-weight: 500;
+  text-decoration: none; /* Prevent underline for links */
   filter: drop-shadow(0px 10px 10px #01be9551);
   
   :hover {
     filter: drop-shadow(0px 10px 10px #01be9570);
   }
-;`
+`;
 
 
 const ImageWrapper = styled.div`
@@ -135,14 +145,14 @@ const ImageWrapper = styled.div`
   height: auto;
   display: flex;
   justify-content: flex-end; 
-;`
+`;
 
 const Image = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
   pointer-events: none;  /* This disables interactions with the image (including right-click) */
-;`
+`;
 
 const GradientOverlayLeft = styled.div`
   position: absolute;
@@ -152,7 +162,7 @@ const GradientOverlayLeft = styled.div`
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
   pointer-events: none;
-;`
+`;
 
 const GradientOverlayBottom = styled.div`
   position: absolute;
@@ -162,4 +172,4 @@ const GradientOverlayBottom = styled.div`
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
   pointer-events: none;
-;`
+`;
