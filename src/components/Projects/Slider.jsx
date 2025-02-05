@@ -37,7 +37,7 @@ export const data = [
     {
         img : Camponlinestore,
         disc : "Online store - React",
-        link : "/Project4"
+        link : "https://online-store-testing-gy24.vercel.app/"
     },
     {
         img : P4,
