@@ -23,7 +23,7 @@ export const data = [
   {
     img : ff0,
     disc : "Gaming UI Web",
-    link : "https://ff0testing.vercel.app/"
+    link : "https://ff0testing2.vercel.app/"
   },
     {
         img : P1,
