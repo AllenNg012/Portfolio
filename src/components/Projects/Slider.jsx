@@ -9,6 +9,7 @@ import  P3 from "../pic/p3/tbc.gif";
 import  P4 from "../pic/p4/1.gif";
 import  P5 from "../pic/p5/7.gif";
 import  H3 from "../pic/h3.gif";
+import  ff0 from "../pic/ff0.gif";
 import  Intern from "../pic/intern.gif";
 import Camponlinestore from "../pic/Camponlinestore.gif";
 import  Exchange from "../pic/exchange.gif";
@@ -19,6 +20,11 @@ import  Practice from "../pic/pratice.gif";
 
 // Data array to export
 export const data = [
+  {
+    img : ff0,
+    disc : "Gaming UI Web",
+    link : "https://ff0testing.vercel.app/"
+  },
     {
         img : P1,
         disc : "CRM - Wordpress project",
@@ -26,7 +32,7 @@ export const data = [
     },
     {
         img : H3,
-        disc : "Official Website - Bar",
+        disc : "Website - Bar",
         link : "https://new-project-h3restaurant.vercel.app/"
     },
     {
