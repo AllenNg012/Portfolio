@@ -10,6 +10,7 @@ import  P4 from "../pic/p4/1.gif";
 import  P5 from "../pic/p5/7.gif";
 import  H3 from "../pic/h3.gif";
 import  ff0 from "../pic/ff0.gif";
+import  hpn from "../pic/hpn.gif";
 import  Intern from "../pic/intern.gif";
 import Camponlinestore from "../pic/Camponlinestore.gif";
 import  Exchange from "../pic/exchange.gif";
@@ -20,6 +21,11 @@ import  Practice from "../pic/pratice.gif";
 
 // Data array to export
 export const data = [
+  {
+    img : hpn,
+    disc : "CURD - Harry Potter theme",
+    link : "https://harry-news-final.vercel.app/"
+  },
   {
     img : ff0,
     disc : "Gaming UI Web",
