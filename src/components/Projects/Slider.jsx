@@ -23,7 +23,7 @@ import  Practice from "../pic/pratice.gif";
 export const data = [
   {
     img : hpn,
-    disc : "CRUD - Harry Potter theme",
+    disc : "CRUD - Harry Potter Theme",
     link : "https://harry-news-final.vercel.app/"
   },
   {
